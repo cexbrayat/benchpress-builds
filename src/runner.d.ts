@@ -14,7 +14,7 @@ import { SampleState } from './sampler';
 export declare class Runner {
     private _defaultProviders;
     constructor(_defaultProviders?: StaticProvider[]);
-    sample({id, execute, prepare, microMetrics, providers, userMetrics}: {
+    sample({ id, execute, prepare, microMetrics, providers, userMetrics }: {
         id: string;
         execute?: Function;
         prepare?: Function;

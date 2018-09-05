@@ -21,15 +21,15 @@ export declare class ChromeDriverExtension extends WebDriverExtension {
     private _majorChromeVersion;
     private _firstRun;
     constructor(_driver: WebDriverAdapter, userAgent: string);
-    private _parseChromeVersion(userAgent);
+    private _parseChromeVersion;
     gc(): Promise<any>;
     timeBegin(name: string): Promise<any>;
     timeEnd(name: string, restartName?: string | null): Promise<any>;
     readPerfLog(): Promise<PerfLogEvent[]>;
-    private _convertPerfRecordsToEvents(chromeEvents, normalizedEvents?);
-    private _convertEvent(event, categories);
-    private _parseCategories(categories);
-    private _isEvent(eventCategories, eventName, expectedCategories, expectedName?);
+    private _convertPerfRecordsToEvents;
+    private _convertEvent;
+    private _parseCategories;
+    private _isEvent;
     perfLogFeatures(): PerfLogFeatures;
     supports(capabilities: {
         [key: string]: any;

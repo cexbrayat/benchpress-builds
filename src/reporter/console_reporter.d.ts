@@ -20,18 +20,21 @@ export declare class ConsoleReporter extends Reporter {
     static PROVIDERS: ({
         provide: typeof ConsoleReporter;
         deps: (InjectionToken<{}> | typeof SampleDescription)[];
+        useValue?: undefined;
     } | {
         provide: InjectionToken<{}>;
         useValue: number;
+        deps?: undefined;
     } | {
         provide: InjectionToken<{}>;
         useValue: (v: any) => void;
+        deps?: undefined;
     })[];
-    private static _lpad(value, columnWidth, fill?);
+    private static _lpad;
     private _metricNames;
     constructor(_columnWidth: number, sampleDescription: SampleDescription, _print: Function);
-    private _printDescription(sampleDescription);
+    private _printDescription;
     reportMeasureValues(measureValues: MeasureValues): Promise<any>;
     reportSample(completeSample: MeasureValues[], validSamples: MeasureValues[]): Promise<any>;
-    private _printStringRow(parts, fill?);
+    private _printStringRow;
 }

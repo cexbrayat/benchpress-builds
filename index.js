@@ -7,6 +7,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+/// <reference types="node" />
 // Must be imported first, because Angular decorators throw on load.
 require("reflect-metadata");
 var core_1 = require("@angular/core");

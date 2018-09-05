@@ -1,3 +1,10 @@
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
 export declare type PerfLogEvent = {
     [key: string]: any;
 } & {
@@ -47,7 +54,7 @@ export declare class PerfLogFeatures {
     gc: boolean;
     frameCapture: boolean;
     userTiming: boolean;
-    constructor({render, gc, frameCapture, userTiming}?: {
+    constructor({ render, gc, frameCapture, userTiming }?: {
         render?: boolean;
         gc?: boolean;
         frameCapture?: boolean;

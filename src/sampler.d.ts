@@ -30,8 +30,8 @@ export declare class Sampler {
     static PROVIDERS: StaticProvider[];
     constructor(_driver: WebDriverAdapter, _metric: Metric, _reporter: Reporter, _validator: Validator, _prepare: Function, _execute: Function, _now: Function);
     sample(): Promise<SampleState>;
-    private _iterate(lastState);
-    private _report(state, metricValues);
+    private _iterate;
+    private _report;
 }
 export declare class SampleState {
     completeSample: MeasureValues[];
